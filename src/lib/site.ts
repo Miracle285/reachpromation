@@ -1,9 +1,9 @@
 import flyerImg from "@/assets/service-flyer.jpg";
 import newspaperImg from "@/assets/service-newspaper.jpg";
 import collegeImg from "@/assets/service-college.jpg";
-import poleImg from "@/assets/service-pole-board.jpg";
-import sunpackImg from "@/assets/service-sunpack.jpg";
-import bannerImg from "@/assets/service-banner.jpg";
+import noParkingImg from "@/assets/no-parking-board-installation.jpg.asset.json";
+import sunpackImg from "@/assets/sunpack-pole-board-installation.jpg.asset.json";
+import bannerImg from "@/assets/small-banner-installation.jpg.asset.json";
 import eduFairImg from "@/assets/service-edu-fair.jpg";
 import productImg from "@/assets/service-product.jpg";
 import marketingImg from "@/assets/service-marketing.jpg";
@@ -53,6 +53,7 @@ export type Service = {
   benefits: string[];
   image: string;
   alt: string;
+  imagePosition?: string;
 };
 
 export const SERVICES: Service[] = [
@@ -89,8 +90,8 @@ export const SERVICES: Service[] = [
     short: "Installation of no-parking boards for promotional and location-based requirements.",
     description: "We install no-parking and pole boards at the locations you need, carrying your brand at street level where people walk and drive every day.",
     benefits: ["Street-level brand visibility", "Location-based placement", "Neat, secure installation"],
-    image: poleImg,
-    alt: "Worker fixing a board onto a street pole",
+    image: noParkingImg.url,
+    alt: "Two workers installing a no-parking board on a metal gate",
   },
   {
     slug: "sunpack-board-installation",
@@ -98,8 +99,9 @@ export const SERVICES: Service[] = [
     short: "Installation of Sunpack boards for outdoor promotional and advertising purposes.",
     description: "Lightweight, weather-resistant Sunpack boards placed along roads, railings and junctions to keep your brand visible to passing traffic.",
     benefits: ["Visible to daily commuters", "Light and weather-resistant boards", "Quick installation across locations"],
-    image: sunpackImg,
-    alt: "Two workers installing a Sunpack board on a roadside railing",
+    image: sunpackImg.url,
+    alt: "Reach Promotion pole board installed on a tree-lined street",
+    imagePosition: "center 25%",
   },
   {
     slug: "banner-installation",
@@ -107,8 +109,9 @@ export const SERVICES: Service[] = [
     short: "Small banner installation for promotional campaigns and local brand visibility.",
     description: "We put up banners at markets, junctions and event venues to announce openings, offers and events in the neighbourhoods that matter to you.",
     benefits: ["Ideal for openings and offers", "Placement in busy local areas", "Coordinated setup and removal"],
-    image: bannerImg,
-    alt: "Workers tying a banner above a busy market street",
+    image: bannerImg.url,
+    alt: "Worker installing a promotional banner on a street pole",
+    imagePosition: "center 25%",
   },
   {
     slug: "educational-fair-support",
@@ -180,12 +183,12 @@ export const GALLERY_CATEGORIES = [
 
 export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
 
-export const GALLERY: { image: string; category: GalleryCategory; caption: string }[] = [
+export const GALLERY: { image: string; category: GalleryCategory; caption: string; position?: string }[] = [
   { image: flyerImg, category: "Flyer Distribution", caption: "Door-to-door flyer distribution at a residential apartment" },
-  { image: poleImg, category: "Pole Board Installation", caption: "Installing a promotional board on a street pole" },
-  { image: sunpackImg, category: "Pole Board Installation", caption: "Sunpack board installation on a roadside railing" },
+  { image: noParkingImg.url, category: "Pole Board Installation", caption: "Two workers installing a no-parking board on a metal gate" },
+  { image: sunpackImg.url, category: "Pole Board Installation", caption: "Reach Promotion pole board installed on a tree-lined street", position: "center 25%" },
   { image: newspaperImg, category: "Newspaper Insertion", caption: "Preparing flyers for a newspaper insertion campaign" },
-  { image: bannerImg, category: "Banner Installation", caption: "Banner installation above a busy market street" },
+  { image: bannerImg.url, category: "Banner Installation", caption: "Worker installing a promotional banner on a street pole", position: "center 25%" },
   { image: collegeImg, category: "College Promotions", caption: "Flyer distribution outside a college campus" },
   { image: productImg, category: "Product Distribution", caption: "Product sampling outside a supermarket" },
   { image: eduFairImg, category: "Promotional Events", caption: "Volunteer support at an education fair" },

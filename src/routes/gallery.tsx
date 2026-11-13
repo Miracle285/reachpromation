@@ -55,7 +55,7 @@ function Gallery() {
             {items.map((g) => (
               <li key={g.caption}>
                 <figure className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
-                  <img src={g.image} alt={g.caption} loading="lazy" width={1200} height={912} className="aspect-[4/3] w-full object-cover" />
+                  <img src={g.image} alt={g.caption} loading="lazy" width={1200} height={912} style={{ objectPosition: g.position }} className="aspect-[4/3] w-full object-cover" />
                   <figcaption className="p-4">
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">{g.category}</p>
                     <p className="mt-1.5 text-sm text-primary">{g.caption}</p>

@@ -10,7 +10,7 @@ export function ServiceCard({ service }: { service: Service }) {
       className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-card transition-transform hover:-translate-y-0.5"
     >
       <div className="aspect-[4/3] overflow-hidden bg-muted">
-        <img src={service.image} alt={service.alt} loading="lazy" width={1200} height={912} className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+        <img src={service.image} alt={service.alt} loading="lazy" width={1200} height={912} style={{ objectPosition: service.imagePosition }} className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-2xl text-primary">{service.title}</h3>

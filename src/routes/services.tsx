@@ -42,6 +42,7 @@ function Services() {
               loading="lazy"
               width={1200}
               height={912}
+              style={{ objectPosition: s.imagePosition }}
               className={`aspect-[4/3] w-full rounded-lg object-cover shadow-card ${i % 2 === 1 ? "md:order-2" : ""}`}
             />
             <div>
