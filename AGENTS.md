@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site content (services, contacts, clients, gallery, nav) lives in `src/lib/site.ts`; pages read from it so details change in one place.
+- Form validation schemas live in `src/lib/enquiry-schemas.ts` and are shared by the browser and the server functions in `src/lib/enquiries.functions.ts`, so rules can't drift.
+- Enquiries are inserted via server functions using a publishable-key client; tables allow anonymous INSERT only, so visitors can never read submissions.
+- Shared header/footer are rendered in `src/routes/__root.tsx`; each page sets its own `head()` via `pageMeta` in `src/lib/seo.ts`.
