@@ -23,6 +23,15 @@ import eduFairImg from "@/assets/service-edu-fair.jpg";
 import productImg from "@/assets/service-product.jpg";
 import marketingImg from "@/assets/service-marketing.jpg";
 import salesImg from "@/assets/service-sales.jpg";
+import nagendraCertificate from "@/assets/gallery-aecc-nagendra-certificate.jpg.asset.json";
+import raghuCertificate from "@/assets/gallery-aecc-raghu-certificate.jpg.asset.json";
+import canamCertificate from "@/assets/gallery-canam-participation-certificate.jpg.asset.json";
+import flyerOutreach1 from "@/assets/gallery-flyer-outreach-1.jpg.asset.json";
+import flyerOutreach2 from "@/assets/gallery-flyer-outreach-2.jpg.asset.json";
+import flyerOutreach3 from "@/assets/gallery-flyer-outreach-3.jpg.asset.json";
+import globalDegreesEvent from "@/assets/gallery-global-degrees-event.jpg.asset.json";
+import educationPoleBoard1 from "@/assets/gallery-education-fair-pole-board-1.jpg.asset.json";
+import educationPoleBoard2 from "@/assets/gallery-education-fair-pole-board-2.jpg.asset.json";
 
 export const BRAND = {
   name: "Reach Promotion",
@@ -195,6 +204,7 @@ export const GALLERY_CATEGORIES = [
   "College Promotions",
   "Product Distribution",
   "Promotional Events",
+  "Certificates",
 ] as const;
 
 export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
@@ -218,4 +228,13 @@ export const GALLERY: { image: string; category: GalleryCategory; caption: strin
   { image: g12.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (3)" },
   { image: g13.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (4)" },
   { image: g14.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (5)" },
+  { image: flyerOutreach1.url, category: "Flyer Distribution", caption: "Our team distributing flyers on the street (1)" },
+  { image: flyerOutreach2.url, category: "Flyer Distribution", caption: "Our team distributing flyers on the street (2)" },
+  { image: flyerOutreach3.url, category: "Flyer Distribution", caption: "Our team distributing flyers on the street (3)" },
+  { image: globalDegreesEvent.url, category: "Promotional Events", caption: "Team photo at a Global Degrees event" },
+  { image: educationPoleBoard1.url, category: "Pole Board Installation", caption: "Australia & New Zealand Education Fair pole board (1)" },
+  { image: educationPoleBoard2.url, category: "Pole Board Installation", caption: "Australia & New Zealand Education Fair pole board (2)" },
+  { image: nagendraCertificate.url, category: "Certificates", caption: "AECC certificate of attendance — Nagendra K" },
+  { image: raghuCertificate.url, category: "Certificates", caption: "AECC certificate of attendance — Raghu Kumar" },
+  { image: canamCertificate.url, category: "Certificates", caption: "Canadian Universities & Colleges Admissions Fair certificate of participation" },
 ];
