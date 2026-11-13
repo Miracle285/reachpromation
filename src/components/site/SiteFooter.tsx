@@ -47,7 +47,7 @@ export function SiteFooter() {
                 ))}
               </li>
             ))}
-            <li className="flex items-center gap-2 text-navy-foreground-muted"><MapPin className="size-4" /> {BRAND.location}</li>
+            <li className="flex items-start gap-2 text-navy-foreground-muted"><MapPin className="mt-0.5 size-4 shrink-0" /> {BRAND.address}</li>
           </ul>
         </div>
       </div>

@@ -4,6 +4,21 @@ import collegeImg from "@/assets/service-college.jpg";
 import noParkingImg from "@/assets/no-parking-board-installation.jpg.asset.json";
 import sunpackImg from "@/assets/sunpack-pole-board-installation.jpg.asset.json";
 import bannerImg from "@/assets/small-banner-installation.jpg.asset.json";
+import g0 from "@/assets/gallery-newspaper-insertion-1.jpg.asset.json";
+import g1 from "@/assets/gallery-newspaper-insertion-2.jpg.asset.json";
+import g2 from "@/assets/gallery-newspaper-insertion-3.jpg.asset.json";
+import g3 from "@/assets/gallery-newspaper-insertion-4.jpg.asset.json";
+import g4 from "@/assets/gallery-college-promotion-christ-university.jpg.asset.json";
+import g5 from "@/assets/gallery-pg-pole-board-1.jpg.asset.json";
+import g6 from "@/assets/gallery-pg-pole-board-2.jpg.asset.json";
+import g7 from "@/assets/gallery-pg-pole-board-3.jpg.asset.json";
+import g8 from "@/assets/gallery-pg-pole-board-4.jpg.asset.json";
+import g9 from "@/assets/gallery-pg-pole-board-5.jpg.asset.json";
+import g10 from "@/assets/gallery-pharmacy-pole-board-1.jpg.asset.json";
+import g11 from "@/assets/gallery-pharmacy-pole-board-2.jpg.asset.json";
+import g12 from "@/assets/gallery-pharmacy-pole-board-3.jpg.asset.json";
+import g13 from "@/assets/gallery-pharmacy-pole-board-4.jpg.asset.json";
+import g14 from "@/assets/gallery-pharmacy-pole-board-5.jpg.asset.json";
 import eduFairImg from "@/assets/service-edu-fair.jpg";
 import productImg from "@/assets/service-product.jpg";
 import marketingImg from "@/assets/service-marketing.jpg";
@@ -13,6 +28,7 @@ export const BRAND = {
   name: "Reach Promotion",
   tagline: "Take Your Brand to Greater Heights.",
   location: "Bangalore, Karnataka",
+  address: "No 146, 2nd Main Road, 2nd Block, 33rd Cross, Jugganahalli, Rajajinagar, Bangalore 560010",
 };
 
 export type Contact = { name: string; phones: string[] };
@@ -183,14 +199,23 @@ export const GALLERY_CATEGORIES = [
 
 export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
 
-export const GALLERY: { image: string; category: GalleryCategory; caption: string; position?: string }[] = [
-  { image: flyerImg, category: "Flyer Distribution", caption: "Door-to-door flyer distribution at a residential apartment" },
+export const GALLERY: { image: string; category: GalleryCategory; caption: string }[] = [
   { image: noParkingImg.url, category: "Pole Board Installation", caption: "Two workers installing a no-parking board on a metal gate" },
-  { image: sunpackImg.url, category: "Pole Board Installation", caption: "Reach Promotion pole board installed on a tree-lined street", position: "center 25%" },
-  { image: newspaperImg, category: "Newspaper Insertion", caption: "Preparing flyers for a newspaper insertion campaign" },
-  { image: bannerImg.url, category: "Banner Installation", caption: "Worker installing a promotional banner on a street pole", position: "center 25%" },
-  { image: collegeImg, category: "College Promotions", caption: "Flyer distribution outside a college campus" },
-  { image: productImg, category: "Product Distribution", caption: "Product sampling outside a supermarket" },
-  { image: eduFairImg, category: "Promotional Events", caption: "Volunteer support at an education fair" },
-  { image: marketingImg, category: "Promotional Events", caption: "Planning target locations for a city-wide campaign" },
+  { image: sunpackImg.url, category: "Pole Board Installation", caption: "Reach Promotion pole board installed on a tree-lined street" },
+  { image: bannerImg.url, category: "Banner Installation", caption: "Worker installing a promotional banner on a street pole" },
+  { image: g0.url, category: "Newspaper Insertion", caption: "Our team inserting flyers into morning newspapers (1)" },
+  { image: g1.url, category: "Newspaper Insertion", caption: "Our team inserting flyers into morning newspapers (2)" },
+  { image: g2.url, category: "Newspaper Insertion", caption: "Our team inserting flyers into morning newspapers (3)" },
+  { image: g3.url, category: "Newspaper Insertion", caption: "Our team inserting flyers into morning newspapers (4)" },
+  { image: g4.url, category: "College Promotions", caption: "Flyer distribution outside Christ University" },
+  { image: g5.url, category: "Pole Board Installation", caption: "PG pole board installed in Basavanagudi (1)" },
+  { image: g6.url, category: "Pole Board Installation", caption: "PG pole board installed in Basavanagudi (2)" },
+  { image: g7.url, category: "Pole Board Installation", caption: "PG pole board installed in Basavanagudi (3)" },
+  { image: g8.url, category: "Pole Board Installation", caption: "PG pole board installed in Basavanagudi (4)" },
+  { image: g9.url, category: "Pole Board Installation", caption: "PG pole board installed in Basavanagudi (5)" },
+  { image: g10.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (1)" },
+  { image: g11.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (2)" },
+  { image: g12.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (3)" },
+  { image: g13.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (4)" },
+  { image: g14.url, category: "Pole Board Installation", caption: "Pharmacy pole board installed at night (5)" },
 ];

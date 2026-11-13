@@ -54,13 +54,13 @@ function Gallery() {
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((g) => (
               <li key={g.caption}>
-                <figure className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
-                  <img src={g.image} alt={g.caption} loading="lazy" width={1200} height={912} style={{ objectPosition: g.position }} className="aspect-[4/3] w-full object-cover" />
+                <a href={g.image} target="_blank" rel="noopener noreferrer" className="block"><figure className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
+                  <img src={g.image} alt={g.caption} loading="lazy" className="aspect-[3/4] w-full bg-secondary object-contain" />
                   <figcaption className="p-4">
                     <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">{g.category}</p>
                     <p className="mt-1.5 text-sm text-primary">{g.caption}</p>
                   </figcaption>
-                </figure>
+                </figure></a>
               </li>
             ))}
           </ul>

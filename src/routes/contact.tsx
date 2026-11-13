@@ -89,7 +89,7 @@ function Contact() {
             <MapPin className="size-6 shrink-0 text-accent" />
             <div>
               <p className="font-semibold text-primary">Business location</p>
-              <p className="text-muted-foreground">{BRAND.location}</p>
+              <p className="text-muted-foreground">{BRAND.address}</p>
             </div>
           </div>
         </div>
